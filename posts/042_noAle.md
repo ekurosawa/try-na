@@ -3,7 +3,7 @@ title: "lager"
 year: ["2024"]
 date: "2024.11.14"
 writer: "黒沢 絵里"
-thumbNa: /images/I20241114_023039989_iOS.jpg
+thumbNa: /images/20241114_023039989_iOS.jpg
 description: "a"
 tag: ["散歩", "花"]
 ---
