@@ -9,6 +9,9 @@ import Toolber from "@mui/material/Toolbar";
 import Appbar from "@mui/material/AppBar";
 import Paper from "@mui/material/Paper"
 
+// pages/index.js
+import VideoCall from '../components/VideoCall';
+
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
@@ -26,9 +29,11 @@ function Copyright() {
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-export default function Footer({  tags = [], years = [], months = [] }) {
+export default function Footer({ tags = [], years = [], months = [] }) {
 
-  
+  const userId = 'user1'; // 仮のユーザーID
+  const peerId = 'user2'; // 仮のピアID
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
@@ -48,8 +53,12 @@ export default function Footer({  tags = [], years = [], months = [] }) {
           <Typography sx={{ fontWeight: "bold" }} color="#444444">
             Nakazuba
           </Typography>
+
           <Copyright />
-        </Container>        
+          <Typography>
+            WebRTC Video Call</Typography>
+          <VideoCall userId={userId} peerId={peerId} />
+        </Container>
       </Appbar>
     </ThemeProvider>
   );
