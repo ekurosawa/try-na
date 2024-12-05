@@ -55,9 +55,11 @@ export default function Footer({ tags = [], years = [], months = [] }) {
           </Typography>
 
           <Copyright />
+        {/*
           <Typography>
             WebRTC Video Call</Typography>
           <VideoCall userId={userId} peerId={peerId} />
+          */}
         </Container>
       </Appbar>
     </ThemeProvider>
